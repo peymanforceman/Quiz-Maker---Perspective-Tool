@@ -1,0 +1,433 @@
+
+.test-questions.comp {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 15px
+}
+
+@media (min-width: 400px) {
+  .test-questions.comp {
+    padding: 15px 30px
+  }
+}
+
+@media (min-width: 992px) {
+  .test-questions.comp {
+    padding: 15px
+  }
+}
+
+.test-questions.comp .question {
+  padding: 15px 0 15px;
+  width: 100%;
+  max-width: 400px;
+  border-bottom: 1px solid #dcdcdc
+}
+
+@media (min-width: 768px) {
+  .test-questions.comp .question {
+    max-width: none
+  }
+}
+
+@media (min-width: 992px) {
+  .test-questions.comp .question {
+    padding: 15px 0 15px
+  }
+}
+
+@media (min-width: 992px) and (min-height: 900px) {
+  .test-questions.comp .question {
+    padding: 15px 0 15px
+  }
+}
+
+.test-questions.comp .question .statement {
+  color: #576071;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5
+}
+
+@media (min-width: 768px) {
+  .test-questions.comp .question .statement {
+    font-size: 1.2em
+  }
+}
+
+@media (min-width: 992px) {
+  .test-questions.comp .question .statement {
+    font-size: 1.3em
+  }
+}
+
+@media (min-width: 992px) and (min-height: 900px) {
+  .test-questions.comp .question .statement {
+    font-size: 1.3em
+  }
+}
+
+.test-questions.comp .question .decision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 30px 0 15px
+}
+
+@media (min-width: 768px) {
+  .test-questions.comp .question .decision {
+    margin: 15px 0 15px
+  }
+}
+
+@media (min-width: 768px) and (min-height: 900px) {
+  .test-questions.comp .question .decision {
+    margin-top: 15px
+  }
+}
+
+@media (min-width: 992px) and (min-height: 900px) {
+  .test-questions.comp .question .decision {
+    margin: 15px 0 15px
+  }
+}
+
+.test-questions.comp .question .decision:not(.mobile) .caption {
+  display: none
+}
+
+@media (min-width: 768px) {
+  .test-questions.comp .question .decision:not(.mobile) .caption {
+    display: block
+  }
+}
+
+.test-questions.comp .question .decision.mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+
+@media (min-width: 768px) {
+  .test-questions.comp .question .decision.mobile {
+    display: none
+  }
+}
+
+.test-questions.comp .question .decision .caption {
+  font-weight: 600;
+  font-size: .8em;
+  text-transform: uppercase
+}
+
+.test-questions.comp .question .decision .caption.agree {
+  color: #38c172 !important
+}
+
+.test-questions.comp .question .decision .caption.disagree {
+  color: #e3342f !important
+}
+
+@media (min-width: 768px) {
+  .test-questions.comp .question .decision .caption {
+    font-size: 1em;
+    text-transform: none
+  }
+}
+
+@media (min-width: 768px) and (min-height: 900px) {
+  .test-questions.comp .question .decision .caption {
+    font-size: 1.1em
+  }
+}
+
+@media (min-width: 992px) {
+  .test-questions.comp .question .decision .caption {
+    font-size: 1.1em
+  }
+}
+
+@media (min-width: 992px) and (min-height: 900px) {
+  .test-questions.comp .question .decision .caption {
+    font-size: 1.3em
+  }
+}
+
+.test-questions.comp .question .decision .options {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  margin: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+
+@media (min-width: 768px) {
+  .test-questions.comp .question .decision .options {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 400px;
+    flex: 0 0 400px;
+    margin: 0 30px
+  }
+}
+
+@media (min-width: 992px) {
+  .test-questions.comp .question .decision .options {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 500px;
+    flex: 0 0 500px
+  }
+}
+
+@media (min-width: 992px) and (min-height: 900px) {
+  .test-questions.comp .question .decision .options {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 600px;
+    flex: 0 0 600px;
+    margin: 0 60px
+  }
+}
+
+.test-questions.comp .question .decision .options .option {
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.test-questions.comp .question .decision .options .option.agree {
+  border: 2px solid #38c172 !important
+}
+
+.test-questions.comp .question .decision .options .option.agree.active,
+.test-questions.comp .question .decision .options .option.agree:hover {
+  background-color: #38c172 !important
+}
+
+.test-questions.comp .question .decision .options .option.neutral {
+  border: 2px solid #9b9faa;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25px;
+  flex: 0 0 25px;
+  max-width: 25px;
+  height: 25px
+}
+
+.test-questions.comp .question .decision .options .option.neutral.active,
+.test-questions.comp .question .decision .options .option.neutral:hover {
+  background-color: #9b9faa
+}
+
+@media (min-width: 992px) {
+  .test-questions.comp .question .decision .options .option.neutral {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30px;
+    flex: 0 0 30px;
+    max-width: 30px;
+    height: 30px
+  }
+}
+
+@media (min-width: 992px) and (min-height: 900px) {
+  .test-questions.comp .question .decision .options .option.neutral {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 35px;
+    flex: 0 0 35px;
+    max-width: 35px;
+    height: 35px
+  }
+}
+
+.test-questions.comp .question .decision .options .option.neutral span {
+  font-size: .7em
+}
+
+@media (min-width: 992px) and (min-height: 900px) {
+  .test-questions.comp .question .decision .options .option.neutral span {
+    font-size: .9em
+  }
+}
+
+.test-questions.comp .question .decision .options .option.disagree {
+  border: 2px solid #e3342f !important
+}
+
+.test-questions.comp .question .decision .options .option.disagree.active,
+.test-questions.comp .question .decision .options .option.disagree:hover {
+  background-color: #e3342f !important
+}
+
+.test-questions.comp .question .decision .options .option.max {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 45px;
+  flex: 0 0 45px;
+  max-width: 45px;
+  height: 45px
+}
+
+@media (min-width: 992px) {
+  .test-questions.comp .question .decision .options .option.max {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 55px;
+    flex: 0 0 55px;
+    max-width: 55px;
+    height: 55px
+  }
+}
+
+@media (min-width: 992px) and (min-height: 900px) {
+  .test-questions.comp .question .decision .options .option.max {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 70px;
+    flex: 0 0 70px;
+    max-width: 70px;
+    height: 70px
+  }
+}
+
+.test-questions.comp .question .decision .options .option.max span {
+  font-size: 1.1em;
+  margin-top: 3px
+}
+
+@media (min-width: 992px) and (min-height: 900px) {
+  .test-questions.comp .question .decision .options .option.max span {
+    font-size: 1.5em
+  }
+}
+
+.test-questions.comp .question .decision .options .option.med {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 35px;
+  flex: 0 0 35px;
+  max-width: 35px;
+  height: 35px
+}
+
+@media (min-width: 992px) {
+  .test-questions.comp .question .decision .options .option.med {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 45px;
+    flex: 0 0 45px;
+    max-width: 45px;
+    height: 45px
+  }
+}
+
+@media (min-width: 992px) and (min-height: 900px) {
+  .test-questions.comp .question .decision .options .option.med {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 55px;
+    flex: 0 0 55px;
+    max-width: 55px;
+    height: 55px
+  }
+}
+
+.test-questions.comp .question .decision .options .option.med span {
+  font-size: 1em;
+  margin-top: 2px
+}
+
+@media (min-width: 992px) and (min-height: 900px) {
+  .test-questions.comp .question .decision .options .option.med span {
+    font-size: 1.2em
+  }
+}
+
+.test-questions.comp .question .decision .options .option.min {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 28px;
+  flex: 0 0 28px;
+  max-width: 28px;
+  height: 28px
+}
+
+@media (min-width: 992px) {
+  .test-questions.comp .question .decision .options .option.min {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 35px;
+    flex: 0 0 35px;
+    max-width: 35px;
+    height: 35px
+  }
+}
+
+@media (min-width: 992px) and (min-height: 900px) {
+  .test-questions.comp .question .decision .options .option.min {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 45px;
+    flex: 0 0 45px;
+    max-width: 45px;
+    height: 45px
+  }
+}
+
+.test-questions.comp .question .decision .options .option.min span {
+  font-size: .8em;
+  margin-top: 1px
+}
+
+@media (min-width: 992px) and (min-height: 900px) {
+  .test-questions.comp .question .decision .options .option.min span {
+    font-size: 1em
+  }
+}
+
+.test-questions.comp .question .decision .options .option.active span {
+  color: #fff
+}
+
+@media (min-width: 992px) {
+  .test-questions.comp .question .decision .options .option.agree,
+  .test-questions.comp .question .decision .options .option.disagree,
+  .test-questions.comp .question .decision .options .option.neutral {
+    border-width: 3px
+  }
+}
+
+.test-questions.comp .question .decision .options .option span {
+  color: transparent
+}

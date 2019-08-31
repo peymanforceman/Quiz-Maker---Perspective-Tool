@@ -1,0 +1,408 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Variables
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import "./quiz.scss";
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+#app {
+  height: 100%;
+}
+
+.light-outline {
+  border: 1px grey solid;
+  padding: 30px 30px 30px 30px;
+  text-align: center;
+}
+
+.radio-stretch > * {
+  margin-left: 12px;
+  margin-right: 12px;
+  font-size: 12px;
+}
+
+.result-text {
+  font-size: 14px;
+}
+
+.result-color {
+  background-color: #A920CB;
+}
+
+.not-result-color {
+  background-color: #E9ECEF;
+}
+
+.answer-bar {
+  width: 45%;
+  height: 14px;
+}
+
+.answer-bar-right {
+  border-radius: 0 2px 2px 0;
+
+}
+
+.answer-bar-left {
+  border-radius: 2px 0 0 2px;
+}
+
+
+.result-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+}
+
+
+$fa-font-path: "../webfonts";
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #ddd !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$blue: #4582EC !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #d9534f !default;
+$orange: #fd7e14 !default;
+$yellow: #f0ad4e !default;
+$green: #02B875 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$primary: $blue !default;
+$secondary: $gray-500 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+
+$yiq-contrasted-threshold: 190 !default;
+
+// Body
+
+$body-color: $gray-800 !default;
+
+
+$font-size-base: 1.063rem !default;
+
+$headings-font-weight: 700 !default;
+
+// Tables
+
+$table-border-color: rgba(0, 0, 0, 0.1) !default;
+
+// Buttons
+
+$input-btn-padding-y: 0.5rem !default;
+$input-btn-padding-x: 1.1rem !default;
+
+$btn-font-size: 0.875rem !default;
+
+$btn-font-size-sm: 0.688rem !default;
+
+// Forms
+
+$input-border-color: rgba(0, 0, 0, .1) !default;
+
+$input-group-addon-bg: $gray-200 !default !default;
+
+// Navbar
+
+$navbar-dark-color: rgba($white, .6) !default;
+$navbar-dark-hover-color: $white !default;
+
+$navbar-light-hover-color: $body-color !default;
+$navbar-light-active-color: $body-color !default;
+
+// Tooltips
+
+$tooltip-font-size: 11px !default;
+
+// Badges
+
+$badge-font-weight: normal !default;
+$badge-padding-y: 0.6em !default;
+$badge-padding-x: 1.2em !default;
+
+// Alerts
+
+$alert-border-width: 0 !default;
+
+
+// Navbar ======================================================================
+
+.navbar {
+  font-size: $font-size-sm;
+
+  &.bg-dark {
+    background-color: $success !important;
+  }
+
+  &.bg-light {
+    background-color: #fff !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    &.navbar-fixed-top {
+      border-width: 0 0 1px 0;
+    }
+
+    &.navbar-fixed-bottom {
+      border-width: 1px 0 0 0;
+    }
+  }
+}
+
+// Buttons =====================================================================
+
+.btn {
+  border-radius: 1.078em;
+
+  &-lg {
+    border-radius: 2.688em;
+  }
+
+  &-sm {
+    border-radius: 0.844em;
+  }
+}
+
+// Typography ==================================================================
+
+
+blockquote {
+  font-style: italic;
+}
+
+footer {
+  font-size: $font-size-sm;
+}
+
+.lead {
+  color: $gray-600;
+}
+
+// Tables ======================================================================
+
+table,
+.table {
+  font-size: $font-size-sm;
+
+  &-primary,
+  &-secondary,
+  &-success,
+  &-info,
+  &-warning,
+  &-danger {
+    color: #fff;
+  }
+}
+
+.table {
+
+  &-primary {
+    &, > th, > td {
+      background-color: $primary;
+    }
+  }
+
+  &-secondary {
+    &, > th, > td {
+      background-color: $secondary;
+    }
+  }
+
+  &-light {
+    &, > th, > td {
+      background-color: $light;
+    }
+  }
+
+  &-dark {
+    &, > th, > td {
+      background-color: $dark;
+    }
+  }
+
+  &-success {
+    &, > th, > td {
+      background-color: $success;
+    }
+  }
+
+  &-info {
+    &, > th, > td {
+      background-color: $info;
+    }
+  }
+
+  &-danger {
+    &, > th, > td {
+      background-color: $danger;
+    }
+  }
+
+  &-warning {
+    &, > th, > td {
+      background-color: $warning;
+    }
+  }
+
+  &-active {
+    &, > th, > td {
+      background-color: $table-active-bg;
+    }
+  }
+
+  &-hover {
+
+    .table-primary:hover {
+      &, > th, > td {
+        background-color: darken($primary, 5%);
+      }
+    }
+
+    .table-secondary:hover {
+      &, > th, > td {
+        background-color: darken($secondary, 5%);
+      }
+    }
+
+    .table-light:hover {
+      &, > th, > td {
+        background-color: darken($light, 5%);
+      }
+    }
+
+    .table-dark:hover {
+      &, > th, > td {
+        background-color: darken($dark, 5%);
+      }
+    }
+
+    .table-success:hover {
+      &, > th, > td {
+        background-color: darken($success, 5%);
+      }
+    }
+
+    .table-info:hover {
+      &, > th, > td {
+        background-color: darken($info, 5%);
+      }
+    }
+
+    .table-danger:hover {
+      &, > th, > td {
+        background-color: darken($danger, 5%);
+      }
+    }
+
+    .table-warning:hover {
+      &, > th, > td {
+        background-color: darken($warning, 5%);
+      }
+    }
+
+    .table-active:hover {
+      &, > th, > td {
+        background-color: $table-active-bg;
+      }
+    }
+
+  }
+}
+
+// Forms =======================================================================
+
+// Navs ========================================================================
+
+.nav,
+.breadcrumb,
+.pagination {
+  font-size: $font-size-sm;
+}
+
+.dropdown-menu {
+  font-size: $font-size-sm;
+}
+
+// Indicators ==================================================================
+
+.alert {
+  color: $white;
+  font-size: $font-size-sm;
+
+  &, p {
+  }
+
+  a, .alert-link {
+    color: #fff;
+    font-weight: normal;
+    text-decoration: underline;
+  }
+
+  @each $color, $value in $theme-colors {
+    &-#{$color} {
+      @if $enable-gradients {
+        background: $value linear-gradient(0deg, mix($body-bg, $value, 15%), $value) repeat-x;
+      } @else {
+        background-color: $value;
+      }
+    }
+  }
+
+  &-light {
+    &,
+    & a,
+    & .alert-link {
+      color: $body-color;
+    }
+  }
+}
+
+.badge {
+  vertical-align: bottom;
+}
+
+.list-group {
+  font-size: $font-size-sm;
+}
+
+.router-link-exact-active {
+  font-weight: bold !important;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.mg-bottom {
+  margin-bottom: 15px;
+}

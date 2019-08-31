@@ -75,7 +75,6 @@
                 loginReq: 'loginReq',
             }),
             async login() {
-
                 this.loading = true
                 this.loginReq({
                     username: this.username,

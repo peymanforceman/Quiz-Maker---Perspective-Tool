@@ -28,7 +28,6 @@ const actions = {
     },
     async loginReq({commit}, data) {
         return new Promise((resolve, reject) => {
-            console.log(data)
             axios.post(`oauth/token`, data)
                 .then(response => {
                     const token = response.data.access_token

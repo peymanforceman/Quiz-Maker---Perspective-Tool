@@ -80,6 +80,9 @@
                 this.loginReq({
                     username: this.username,
                     password: this.password,
+                    grant_type: 'password',
+                    client_id: 2,
+                    client_secret: 'YB9yncyFfIJU5Bxs2Okgfmxe6MGM95c0KGTf5pxG',
                 }).then(response => {
                     this.loading = false
                     this.$router.push({name: 'dashboard'})

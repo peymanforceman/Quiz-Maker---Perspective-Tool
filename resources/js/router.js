@@ -63,6 +63,22 @@ const router = new Router({
                     meta: {
                         requiresAuth: true,
                     }
+                },
+                {
+                    path: '/admin/quizzes',
+                    name: 'manage-quizzes',
+                    component: () => import('./Components/main/components/quizzes.vue'),
+                    meta: {
+                        requiresAuth: true,
+                    }
+                },
+                {
+                    path: '/admin/dimensions',
+                    name: 'manage-dimensions',
+                    component: () => import('./Components/main/components/dimensions.vue'),
+                    meta: {
+                        requiresAuth: true,
+                    }
                 }
             ],
         },

@@ -13,23 +13,23 @@
                         <router-link class="nav-link" to="/" exact>Home <span class="sr-only">(current)</span>
                         </router-link>
                     </li>
-                    <li v-if="loggedIn" class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                           aria-haspopup="true" aria-expanded="false">Dashboard</a>
-                        <div class="dropdown-menu" x-placement="bottom-start"
-                             style="position: absolute; transform: translate3d(0px, 35px, 0px); top: 0px; left: 0px; will-change: transform;">
-                            <router-link class="dropdown-item" to="/admin/dashboard">Results</router-link>
-                            <a class="dropdown-item" href="#">Manage Dimensions</a>
-                            <a class="dropdown-item" href="#">Manage Quizzes</a>
-                        </div>
+                    <li v-if="!loggedIn" class="nav-item">
+                        <router-link class="nav-link" to="/admin/login">Login
+                        </router-link>
+                    </li>
+                    <li v-if="loggedIn" class="nav-item">
+                        <router-link class="nav-link" to="/admin/dashboard">Results</router-link>
+                    </li>
+                    <li v-if="loggedIn" class="nav-item">
+                        <router-link class="nav-link" to="/admin/quizzes">Manage Quizzes</router-link>
+                    </li>
+                    <li v-if="loggedIn" class="nav-item">
+                        <router-link class="nav-link" to="/admin/dimensions">Manage Dimensions</router-link>
+                    </li>
+                    <li class="nav-item">
+                        <a v-if="loggedIn" @click="logout" class="nav-link" href="#">Log Out</a>
                     </li>
                 </ul>
-                <nav class="my-2 my-md-0 mr-md-3">
-                    <button v-if="loggedIn" @click="logout" class="btn  btn-light" href="#">Log Out</button>
-                </nav>
-                <router-link exact-active-class="x" v-if="!loggedIn" to="/admin/login" class="btn btn-outline-primary">
-                    Login
-                </router-link>
             </div>
         </nav>
         <router-view @changeRouteTitle="changeRouteTitle"></router-view>

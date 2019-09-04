@@ -25,6 +25,9 @@
                                 </tbody>
                             </table>
                         </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">+ Add New Quiz</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -34,12 +37,11 @@
 
 <script>
     import {mapGetters, mapActions} from 'vuex'
-    import ResultRow from "./src/resultRow";
     import QuizRow from "./src/quizRow";
 
     export default {
         name: "quizzes",
-        components: {QuizRow, ResultRow},
+        components: {QuizRow},
         data() {
             return {}
         },

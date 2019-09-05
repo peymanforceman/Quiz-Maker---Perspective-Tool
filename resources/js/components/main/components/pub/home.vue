@@ -17,7 +17,7 @@
 
 <script>
     import {mapGetters, mapActions} from 'vuex'
-    import QuizCard from "./src/quizCard";
+    import QuizCard from "../src/quizCard";
 
     export default {
         name: "home",

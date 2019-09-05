@@ -20,7 +20,7 @@
 
 <script>
     import {mapGetters, mapActions} from 'vuex'
-    import DimensionContainer from "./src/dimensionContainer";
+    import DimensionContainer from "../src/dimensionContainer";
 
     export default {
         name: "result",

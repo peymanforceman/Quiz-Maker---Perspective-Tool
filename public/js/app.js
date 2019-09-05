@@ -85183,43 +85183,43 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   routes: [{
     path: '',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ./components/main/Template.vue */ "./resources/js/components/main/Template.vue"));
+      return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./components/main/Template.vue */ "./resources/js/components/main/Template.vue"));
     },
     children: [{
       path: '/',
       name: 'home',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ./Components/main/components/home.vue */ "./resources/js/Components/main/components/home.vue"));
+        return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./components/main/components/pub/home.vue */ "./resources/js/components/main/components/pub/home.vue"));
       }
     }, {
       path: '/quiz/:id',
       name: 'quiz',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./Components/main/components/quiz.vue */ "./resources/js/Components/main/components/quiz.vue"));
+        return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./components/main/components/pub/quiz.vue */ "./resources/js/components/main/components/pub/quiz.vue"));
       }
     }, {
       path: '/result/:id',
       name: 'result',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ./Components/main/components/result.vue */ "./resources/js/Components/main/components/result.vue"));
+        return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ./components/main/components/pub/result.vue */ "./resources/js/components/main/components/pub/result.vue"));
       }
     }, {
       path: '/admin/login',
       name: 'login',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ./Components/main/components/login.vue */ "./resources/js/Components/main/components/login.vue"));
+        return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ./components/main/components/pub/login.vue */ "./resources/js/components/main/components/pub/login.vue"));
       }
     }, {
       path: '/error-404',
       name: 'pageError404',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./Components/main/components/error404.vue */ "./resources/js/Components/main/components/error404.vue"));
+        return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ./components/main/components/pub/error404.vue */ "./resources/js/components/main/components/pub/error404.vue"));
       }
     }, {
       path: '/admin/dashboard',
       name: 'dashboard',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./Components/main/components/dashboard.vue */ "./resources/js/Components/main/components/dashboard.vue"));
+        return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./components/main/components/admin/dashboard.vue */ "./resources/js/components/main/components/admin/dashboard.vue"));
       },
       meta: {
         requiresAuth: true
@@ -85228,7 +85228,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
       path: '/admin/quizzes',
       name: 'manage-quizzes',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./Components/main/components/quizzes.vue */ "./resources/js/Components/main/components/quizzes.vue"));
+        return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ./components/main/components/admin/quizzes.vue */ "./resources/js/components/main/components/admin/quizzes.vue"));
       },
       meta: {
         requiresAuth: true
@@ -85237,7 +85237,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
       path: '/admin/dimensions',
       name: 'manage-dimensions',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ./Components/main/components/dimensions.vue */ "./resources/js/Components/main/components/dimensions.vue"));
+        return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ./components/main/components/admin/dimensions.vue */ "./resources/js/components/main/components/admin/dimensions.vue"));
       },
       meta: {
         requiresAuth: true

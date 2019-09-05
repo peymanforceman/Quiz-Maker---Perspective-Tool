@@ -34,32 +34,32 @@ const router = new Router({
                 {
                     path: '/',
                     name: 'home',
-                    component: () => import('./Components/main/components/home.vue'),
+                    component: () => import('./components/main/components/pub/home.vue'),
                 },
                 {
                     path: '/quiz/:id',
                     name: 'quiz',
-                    component: () => import('./Components/main/components/quiz.vue'),
+                    component: () => import('./components/main/components/pub/quiz.vue'),
                 },
                 {
                     path: '/result/:id',
                     name: 'result',
-                    component: () => import('./Components/main/components/result.vue'),
+                    component: () => import('./components/main/components/pub/result.vue'),
                 },
                 {
                     path: '/admin/login',
                     name: 'login',
-                    component: () => import('./Components/main/components/login.vue'),
+                    component: () => import('./components/main/components/pub/login.vue'),
                 },
                 {
                     path: '/error-404',
                     name: 'pageError404',
-                    component: () => import('./Components/main/components/error404.vue')
+                    component: () => import('./components/main/components/pub/error404.vue')
                 },
                 {
                     path: '/admin/dashboard',
                     name: 'dashboard',
-                    component: () => import('./components/main/components/dashboard/dashboard.vue'),
+                    component: () => import('./components/main/components/admin/dashboard.vue'),
                     meta: {
                         requiresAuth: true,
                     }
@@ -67,7 +67,7 @@ const router = new Router({
                 {
                     path: '/admin/quizzes',
                     name: 'manage-quizzes',
-                    component: () => import('./components/main/components/dashboard/quizzes.vue'),
+                    component: () => import('./components/main/components/admin/quizzes.vue'),
                     meta: {
                         requiresAuth: true,
                     }
@@ -75,7 +75,7 @@ const router = new Router({
                 {
                     path: '/admin/dimensions',
                     name: 'manage-dimensions',
-                    component: () => import('./components/main/components/dashboard/dimensions.vue'),
+                    component: () => import('./components/main/components/admin/dimensions.vue'),
                     meta: {
                         requiresAuth: true,
                     }

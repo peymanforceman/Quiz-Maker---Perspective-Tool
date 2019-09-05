@@ -63,8 +63,8 @@
 </template>
 <script>
     import {mapGetters, mapActions} from 'vuex'
-    import ResultRow from "../src/resultRow";
-    import QuestionBox from "../src/questionBox";
+    import ResultRow from "./../src/resultRow";
+    import QuestionBox from "./../src/questionBox";
 
     export default {
         name: "dashboard",
@@ -112,7 +112,3 @@
 
     }
 </script>
-
-<style scoped>
-
-</style>

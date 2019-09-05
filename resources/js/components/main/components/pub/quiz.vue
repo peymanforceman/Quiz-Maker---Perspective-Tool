@@ -41,7 +41,7 @@
 
 <script>
     import {mapActions} from 'vuex'
-    import QuestionBox from "./src/questionBox";
+    import QuestionBox from "../src/questionBox";
 
     export default {
         name: "quiz",

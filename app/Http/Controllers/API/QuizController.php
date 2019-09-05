@@ -30,6 +30,24 @@ class QuizController extends Controller
         }])->first());
     }
 
+    public function create_quiz(Request $request)
+    {
+        $this->validate($request, [
+            'title' => 'required|string',
+            'description' => 'required|string'
+        ]);
+
+        $new_quiz = Quiz::create([
+            'name' => $request->name,
+            'description' => $request->description,
+        ]);
+
+        $new_quiz->sort_id = $new_quiz->id;
+        $new_quiz->save();
+
+        return new QuizResource($new_quiz);
+    }
+
     public function send_quiz(Request $request, Question $question, $id)
     {
         $data = json_decode($request->getContent(), true);

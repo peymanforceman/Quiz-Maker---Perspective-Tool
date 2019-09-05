@@ -19,6 +19,14 @@ import router from './router'
 // Vuex Store
 import store from './store/store'
 
+// for form validation
+import {Form, HasError, AlertError} from 'vform'
+
+window.Form = Form;
+
+Vue.component(HasError.name, HasError)
+Vue.component(AlertError.name, AlertError)
+
 new Vue({
     router,
     store,

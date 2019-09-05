@@ -26,10 +26,45 @@
                             </table>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">+ Add New Quiz</a>
+                            <a href="#" data-toggle="modal" data-target="#add_new_quiz" class="btn btn-primary">+ Add
+                                New Quiz</a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="modal fade" id="add_new_quiz" tabindex="-1" role="dialog" aria-labelledby="AddNewQuiz"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <form>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Add A New Quiz</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="form-group">
+                                <label for="title" class="col-form-label">Title:</label>
+                                <input id="title" type="text" class="form-control" v-model="form.title" name="title"
+                                       :class="{ 'is-invalid': form.errors.has('title') }" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="description" class="col-form-label">Description:</label>
+                                <textarea v-model="form.description" name="description" class="form-control"
+                                          id="description"
+                                          :class="{ 'is-invalid': form.errors.has('title') }"
+                                          required="required"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Create</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -43,7 +78,12 @@
         name: "quizzes",
         components: {QuizRow},
         data() {
-            return {}
+            return {
+                form: new Form({
+                    title: '',
+                    description: ''
+                })
+            }
         },
         computed: {
             ...mapGetters({

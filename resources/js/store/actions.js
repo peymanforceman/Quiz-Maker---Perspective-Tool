@@ -22,6 +22,10 @@ const actions = {
         let response = await axios.get(`api/quiz/result/${id}`)
         commit('SET_QUIZ_RESULT', response.data.data)
     },
+    async getAnswers({commit}, data) {
+        let response = await axios.post(`api/admin/result/answers`, data)
+        return response.data.data
+    },
     async getAllDimensions({commit}) {
         let response = await axios.get(`api/dimensions`)
         commit('SET_DIMENSIONS', response.data.data)

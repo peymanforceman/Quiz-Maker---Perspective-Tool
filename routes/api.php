@@ -16,6 +16,8 @@ Route::middleware('auth:api')->group(function () {
 
     Route::post('/admin/register', 'Auth\AuthController@register');
     Route::any('/admin/results', 'API\ResultController@show_results');
+    Route::any('/admin/result/answers', 'API\ResultController@get_answers');
+    Route::any('/admin/new/quiz', 'API\QuizController@create_quiz');
     Route::post('/admin/logout', 'Auth\AuthController@logout');
 });
 

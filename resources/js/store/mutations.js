@@ -48,7 +48,10 @@ const mutations = {
     },
     GET_ALL_RESULTS(state, data) {
         state.all_results = data
-    }
+    },
+    SET_ANSWERS(state, data) {
+        state.quiz_answers = data
+    },
 }
 
 export default mutations

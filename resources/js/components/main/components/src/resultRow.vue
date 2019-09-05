@@ -5,6 +5,11 @@
         <td>{{ result.participant }}</td>
         <td>{{ result.key }}</td>
         <td>{{ result.meaning }}</td>
+        <td>
+            <button @click="show_results" style="border-radius: 0.25rem;" type="button"
+                    class="btn btn-secondary">Show Answers
+            </button>
+        </td>
     </tr>
 </template>
 
@@ -17,6 +22,11 @@
                 type: Object,
             },
         },
+        methods: {
+            show_results() {
+                this.$root.$emit('show_answers', this.result)
+            }
+        }
     }
 </script>
 

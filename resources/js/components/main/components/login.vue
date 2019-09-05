@@ -75,11 +75,13 @@
                 loginReq: 'loginReq',
             }),
             async login() {
-
                 this.loading = true
                 this.loginReq({
                     username: this.username,
                     password: this.password,
+                    grant_type: 'password',
+                    client_id: 2,
+                    client_secret: 'vGp5J52UPAAPeqoF8lq9hZ8sChDCn2w3MO0OIOs6',
                 }).then(response => {
                     this.loading = false
                     this.$router.push({name: 'dashboard'})

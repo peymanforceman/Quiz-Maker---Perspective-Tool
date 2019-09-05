@@ -38,7 +38,6 @@ const actions = {
 
                     localStorage.setItem('access_token', token)
                     commit('SET_LOGIN_INFO', token)
-
                     resolve(response)
                 })
                 .catch(error => {

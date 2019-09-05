@@ -85492,7 +85492,7 @@ var actions = {
             case 0:
               commit = _ref8.commit;
               return _context7.abrupt("return", new Promise(function (resolve, reject) {
-                axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("oauth/token", data).then(function (response) {
+                axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("api/admin/login", data).then(function (response) {
                   var token = response.data.access_token;
                   localStorage.setItem('access_token', token);
                   commit('SET_LOGIN_INFO', token);

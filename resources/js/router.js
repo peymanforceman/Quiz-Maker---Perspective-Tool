@@ -59,7 +59,7 @@ const router = new Router({
                 {
                     path: '/admin/dashboard',
                     name: 'dashboard',
-                    component: () => import('./Components/main/components/dashboard.vue'),
+                    component: () => import('./components/main/components/dashboard/dashboard.vue'),
                     meta: {
                         requiresAuth: true,
                     }
@@ -67,7 +67,7 @@ const router = new Router({
                 {
                     path: '/admin/quizzes',
                     name: 'manage-quizzes',
-                    component: () => import('./Components/main/components/quizzes.vue'),
+                    component: () => import('./components/main/components/dashboard/quizzes.vue'),
                     meta: {
                         requiresAuth: true,
                     }
@@ -75,7 +75,7 @@ const router = new Router({
                 {
                     path: '/admin/dimensions',
                     name: 'manage-dimensions',
-                    component: () => import('./Components/main/components/dimensions.vue'),
+                    component: () => import('./components/main/components/dashboard/dimensions.vue'),
                     meta: {
                         requiresAuth: true,
                     }

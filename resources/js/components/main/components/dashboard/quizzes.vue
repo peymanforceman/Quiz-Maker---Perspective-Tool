@@ -72,7 +72,7 @@
 
 <script>
     import {mapGetters, mapActions} from 'vuex'
-    import QuizRow from "./src/quizRow";
+    import QuizRow from "../src/quizRow";
 
     export default {
         name: "quizzes",

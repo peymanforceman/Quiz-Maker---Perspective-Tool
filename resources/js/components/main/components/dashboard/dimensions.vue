@@ -38,8 +38,8 @@
 
 <script>
     import {mapGetters, mapActions} from 'vuex'
-    import QuizRow from "./src/quizRow";
-    import DimensionRow from "./src/dimensionRow";
+    import QuizRow from "../src/quizRow";
+    import DimensionRow from "../src/dimensionRow";
 
     export default {
         name: "dimensions",

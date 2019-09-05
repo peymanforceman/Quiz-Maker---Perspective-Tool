@@ -110,10 +110,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 this.loading = true;
                 this.loginReq({
                   username: this.username,
-                  password: this.password,
-                  grant_type: 'password',
-                  client_id: 2,
-                  client_secret: 'vGp5J52UPAAPeqoF8lq9hZ8sChDCn2w3MO0OIOs6'
+                  password: this.password
                 }).then(function (response) {
                   _this.loading = false;
 

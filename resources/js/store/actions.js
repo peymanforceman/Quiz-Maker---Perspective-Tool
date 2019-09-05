@@ -35,7 +35,6 @@ const actions = {
             axios.post(`oauth/token`, data)
                 .then(response => {
                     const token = response.data.access_token
-
                     localStorage.setItem('access_token', token)
                     commit('SET_LOGIN_INFO', token)
                     resolve(response)
